@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NERVNI SLOM</title>
+    <style>
+        /* Basic CSS for styling */
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #0e0e0e; /* Set background color to black */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .logo {
+            max-width: 80%;
+            max-height: 80%;
+            cursor: pointer; /* Change cursor to pointer to indicate clickable */
+        }
+    </style>
+</head>
+<body>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelector('.logo').addEventListener('click', function() {
+                window.location.href = 'main_page.html'; // Replace with the URL of your main page
+            });
+        });
+    </script>
+
+    <img class="logo" src="images/band_logo.png" alt="Band Logo">
+</body>
+</html>
